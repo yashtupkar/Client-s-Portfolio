@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.marquee-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.marquee-item {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  text {
+    font-size: 4rem;
+  }
+}
+
+/* Background size */
+path {
+  stroke-width: 2rem;
+}
+
+@media (max-width: 768px) {
+  path {
+    stroke-width: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  path {
+    stroke-width: 8rem;
+  }
+}
